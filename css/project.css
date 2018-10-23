@@ -53,15 +53,36 @@ header > h2 {}
 *************************************************/
 nav {
     padding: 1rem 2rem;
+
+
 }
 
 nav > a,
 nav > a:visited,
-nav > a:link {}
+nav > a:link {
+    text-decoration: none;
+    color: rgb(227, 227, 227);
+    font-size: 1.5em;
+    font-variant: small-caps;
+
+}
 
 nav > a:active,
 nav > a:focus,
-nav > a:hover {}
+nav > a:hover {
+    font-size: 1.75rem;
+}
+
+.mainnav {
+    background-color: hsl(323, 94%, 39%);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: stretch;
+    align-content: space-between;
+
+}
 
 /*************************************************
             MAIN CONTENT
@@ -75,6 +96,14 @@ section {}
 section p {}
 
 section p img {}
+
+section > h1 {
+    color: hsl(323, 94%, 39%);
+}
+
+section > h2 {
+    color: hsl(323, 94%, 39%);
+}
 
 /*************************************************
             FOOTER
