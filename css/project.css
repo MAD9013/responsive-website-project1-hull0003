@@ -52,13 +52,13 @@ header {
     height: 300px;
     background-size: cover;
 
-
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: space-around;
     align-items: flex-start;
     align-content: flex-start;
+
 
 }
 
@@ -364,44 +364,41 @@ button:hover {
     }
 
 
+    section > h1 {
+        color: hsl(323, 94%, 39%);
+        font-size: 1.5em;
+
+    }
+
+    section > h2 {
+        color: hsl(323, 94%, 39%);
+        font-size: 1.25em;
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr auto;
+    }
+
+    .foot section {
+        margin-left: 0em;
+        margin-right: 0em;
+    }
 
 
-}
+    .comments {
+        grid-row-start: 1;
+        grid-row-end: 1;
+        grid-column-start: 1;
+        grid-column-end: 1;
+    }
 
-section > h1 {
-    color: hsl(323, 94%, 39%);
-    font-size: 1.5em;
+    textarea {
+        width: 90%;
 
-}
+    }
 
-section > h2 {
-    color: hsl(323, 94%, 39%);
-    font-size: 1.25em;
-}
-
-footer {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr auto;
-}
-
-.foot section {
-    margin-left: 0em;
-    margin-right: 0em;
-}
-
-
-.comments {
-    grid-row-start: 1;
-    grid-row-end: 1;
-    grid-column-start: 1;
-    grid-column-end: 1;
-}
-
-textarea {
-    width: 90%;
-
-}
 }
 
 @media (min-width: 600px) and (max-width: 999px) {
@@ -410,8 +407,7 @@ textarea {
         color: black;
         background-image: url(../img/banner.jpg);
         background-repeat: no-repeat;
-        max-width: 80%;
-        height: auto;
+        max-height: 250px;
         background-size: cover;
 
 
@@ -441,7 +437,7 @@ textarea {
         grid-row-start: 1;
         grid-row-end: 1;
         grid-column-start: 1;
-        grid-column-end: 2;
+        grid-column-end: span 2;
         font-size: 1em;
         background-color: rgb(245, 245, 245);
     }
@@ -460,6 +456,11 @@ textarea {
         grid-row-end: 2;
         grid-column-start: 2;
         grid-column-end: 2;
+    }
+
+    img {
+        width: 50%;
+        height: auto;
     }
 
 }
